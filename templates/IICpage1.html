@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+</head>
+
+<body style="background: #12121d">
+    <form id="data-form" method="POST">
+        <div style="
+          width: 659px;
+          height: 400px;
+          left: 30%;
+          top: 26%;
+          position: absolute;
+        ">
+            <div style="
+            width: 659px;
+            height: 400px;
+            left: 0px;
+            top: 0px;
+            position: absolute;
+            background: #2e2e39;
+            border-radius: 20px;
+          "></div>
+            <div style="
+            width: 542px;
+            padding-right: 410px;
+            left: 59px;
+            top: 200px;
+            position: absolute;
+            justify-content: flex-start;
+            align-items: center;
+            display: inline-flex;
+          ">
+                <div style="
+              color: white;
+              font-size: 24px;
+              font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+                sans-serif;
+              font-weight: 700;
+              word-wrap: break-word;
+            ">
+                    Password :
+                </div>
+            </div>
+        </div>
+        <div style="
+          width: 542px;
+          height: 309px;
+          left: 33%;
+          top: 30%;
+          position: absolute;
+        ">
+            <div id="password-input" style="
+            height: 32px;
+            padding-left: 141px;
+            left: 15px;
+            top: 163px;
+            position: absolute;
+            justify-content: flex-end;
+            align-items: center;
+            display: inline-flex;
+          ">
+                <div style="
+              width: 375px;
+              height: 32px;
+              background: rgba(217, 217, 217, 0);
+              box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+              border-radius: 20px;
+              border: 1px #fffcfc solid;
+            ">
+                    <input type="password" id="password-input" name="password-input" style="
+                background: none;
+                border: none;
+                width: 350px;
+                height: 100%;
+                color: white;
+              " placeholder="   Password" />
+                </div>
+            </div>
+            <div style="
+            padding-right: 2px;
+            left: 115px;
+            top: 0px;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            display: inline-flex;
+          ">
+                <div style="
+              color: white;
+              font-size: 30px;
+              font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+                sans-serif;
+              font-weight: 400;
+              word-wrap: break-word;
+            ">
+                    Intelligent Financial Advisor
+                </div>
+            </div>
+            <div style="
+            width: 542px;
+            height: 32px;
+            left: 0px;
+            top: 110px;
+            position: absolute;
+          ">
+                <div style="
+              width: 542px;
+              padding-right: 422px;
+              left: 0px;
+              top: 0px;
+              position: absolute;
+              justify-content: flex-start;
+              align-items: center;
+              display: inline-flex;
+            ">
+                    <div style="
+                text-align: center;
+                color: white;
+                font-size: 24px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
+                  'Trebuchet MS', sans-serif;
+                font-weight: 700;
+                word-wrap: break-word;
+              ">
+                        Username :
+                    </div>
+                </div>
+                <div id="username-input" style="
+              height: 32px;
+              padding-left: 141px;
+              left: 15px;
+              top: 0px;
+              position: absolute;
+              justify-content: flex-end;
+              align-items: center;
+              display: inline-flex;
+            ">
+                    <div style="
+                width: 371px;
+                height: 32px;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 20px;
+                border: 1px #fffcfc solid;
+              ">
+                        <input type="text" id="username-input" name="username-input" placeholder="Username" style="
+                  width: 351px;
+                  height: 100%;
+                  border: none;
+                  outline: none;
+                  padding: 0 10px;
+                  border-radius: 20px;
+                  background: none;
+                  color: white;
+                " />
+                    </div>
+                </div>
+            </div>
+            <div style="
+            width: 312px;
+            height: 32px;
+            left: 150px;
+            top: 227px;
+            position: absolute;
+          ">
+                <div style="
+              padding-right: 56px;
+              left: 8px;
+              top: 3px;
+              position: absolute;
+              justify-content: flex-start;
+              align-items: center;
+              display: inline-flex;
+            ">
+                    <input type="submit" value="CONTINUE THE JOURNEY" style="
+                color: white;
+                font-size: 20px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
+                  'Trebuchet MS', sans-serif;
+                font-weight: 400;
+                word-wrap: break-word;
+                background: rgba(51, 255, 0, 0.78);
+                border-radius: 59px;
+              " />
+                </div>
+            </div>
+        </div>
+        <input type="submit" value="Submit" style="
+          background-color: #008cba;
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          position: absolute;
+          right: 10%;
+          top: 125%;
+        " />
+    </form>
+</body>
+<script type="module" src="{{ url_for('static', filename='index.js') }}"></script>
+
+</html>
