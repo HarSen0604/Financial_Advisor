@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</head>
+
+<body style="background: #12121D">
+    <form id="data-form" method="POST">
+        <div
+            style="width: 1140px; height: 687px; left: 141px; top: 67px; position: absolute; background: #2E2E39; border-radius: 20px">
+        </div>
+        <div style="width: 24px; height: 24px; left: 1096px; top: 569px; position: absolute">
+        </div>
+        <div
+            style="left: 545px; top: 99px; position: absolute; color: white; font-size: 24px; font-family: Inconsolata; font-weight: 400; text-decoration: underline; word-wrap: break-word">
+            Let’s know more about you</div>
+        <div
+            style="left: 149px; top: 170px; position: absolute; color: white; font-size: 24px; font-family: Inconsolata; font-weight: 400; word-wrap: break-word">
+            Name:</div>
+        <div
+            style="left: 155px; top: 587px; position: absolute; color: white; font-size: 24px; font-family: Inconsolata; font-weight: 400; word-wrap: break-word">
+            Expense Details:</div>
+        <div
+            style="left: 762px; top: 223px; position: absolute; color: white; font-size: 24px; font-family: Inconsolata; font-weight: 400; word-wrap: break-word">
+            Password:</div>
+        <div
+            style="left: 149px; top: 325px; position: absolute; color: white; font-size: 24px; font-family: Inconsolata; font-weight: 400; word-wrap: break-word">
+            Investment Experience:</div>
+        <div
+            style="left: 149px; top: 396px; position: absolute; color: white; font-size: 24px; font-family: Inconsolata; font-weight: 400; word-wrap: break-word">
+            Income Details:</div>
+        <div
+            style="left: 762px; top: 170px; position: absolute; color: white; font-size: 24px; font-family: Inconsolata; font-weight: 400; word-wrap: break-word">
+            Date of Birth:</div>
+        <div
+            style="left: 149px; top: 223px; position: absolute; color: white; font-size: 24px; font-family: Inconsolata; font-weight: 400; word-wrap: break-word">
+            Email ID:</div>
+        <div
+            style="left: 149px; top: 522px; position: absolute; color: white; font-size: 24px; font-family: Inconsolata; font-weight: 400; word-wrap: break-word">
+            Financial Goals:</div>
+        <div
+            style="left: 149px; top: 463px; position: absolute; color: white; font-size: 24px; font-family: Inconsolata; font-weight: 400; word-wrap: break-word">
+            Assets and Liabilities:</div>
+        <div
+            style="left: 149px; top: 276px; position: absolute; color: white; font-size: 24px; font-family: Inconsolata; font-weight: 400; word-wrap: break-word">
+            Location:</div>
+        <div
+            style="left: 762px; top: 276px; position: absolute; color: white; font-size: 24px; font-family: Inconsolata; font-weight: 400; word-wrap: break-word">
+            Phone No.</div>
+        <div
+            style="left: 239px; top: 663px; position: absolute; color: white; font-size: 24px; font-family: Inconsolata; font-weight: 400; text-decoration: underline; word-wrap: break-word">
+            Agree to the terms of Service and Privacy Policy Agreement and create a new account</div>
+
+        <div
+            style="width: 205px; min-height: 50px; left: 435px; top: 590px; position: absolute; background: #D9D9D9; border-radius: 20px">
+            <textarea class="mdl-textfield__input" id="expense-details" name="expense-details"
+                style="color: rgb(0, 0, 0); resize: vertical;"></textarea>
+        </div>
+        <script>
+            const expenseDetailsInput = document.getElementById('expense-details');
+            const expenseDetailsContainer = document.querySelector('#expense-details').parentElement;
+
+            expenseDetailsInput.addEventListener('keydown', function (event) {
+                if (event.key === "Enter" && event.shiftKey) {
+                    // Insert a line break (newline) when Shift + Enter is pressed
+                    const currentValue = this.value;
+                    const selectionStart = this.selectionStart;
+                    const selectionEnd = this.selectionEnd;
+
+                    this.value = currentValue.substring(0, selectionStart) + "\n" + currentValue.substring(selectionEnd);
+                    this.selectionStart = this.selectionEnd = selectionStart + 1;
+                    event.preventDefault();
+                }
+            });
+        </script>
+
+        <div
+            style="width: 205px; height: 50px; left: 435px; top: 528px; position: absolute; background: #D9D9D9; border-radius: 20px">
+            <textarea class="mdl-textfield__input" id="income-details" name="income-details"
+                style="color: rgb(0, 0, 0); resize: vertical;"></textarea>
+        </div>
+        <script>
+            const incomeDetailsInput = document.getElementById('income-details');
+            const incomeDetailsContainer = document.querySelector('#income-details').parentElement;
+
+            incomeDetailsInput.addEventListener('keydown', function (event) {
+                if (event.key === "Enter" && event.shiftKey) {
+                    // Insert a line break (newline) when Shift + Enter is pressed
+                    const currentValue = this.value;
+                    const selectionStart = this.selectionStart;
+                    const selectionEnd = this.selectionEnd;
+
+                    this.value = currentValue.substring(0, selectionStart) + "\n" + currentValue.substring(selectionEnd);
+                    this.selectionStart = this.selectionEnd = selectionStart + 1;
+                    event.preventDefault();
+                }
+            });
+        </script>
+
+
+        <div
+            style="width: 205px; height: 50px; left: 435px; top: 466px; position: absolute; background: #D9D9D9; border-radius: 20px">
+            <textarea class="mdl-textfield__input" id="assets-liabilities" name="assets-liabilities"
+                style="color: rgb(0, 0, 0); resize: vertical;"></textarea>
+        </div>
+        <script>
+            const assetsDetailsInput = document.getElementById('assets-liabilities');
+            const assetsDetailsContainer = document.querySelector('#assets-liabilities').parentElement;
+
+            assetsDetailsInput.addEventListener('keydown', function (event) {
+                if (event.key === "Enter" && event.shiftKey) {
+                    // Insert a line break (newline) when Shift + Enter is pressed
+                    const currentValue = this.value;
+                    const selectionStart = this.selectionStart;
+                    const selectionEnd = this.selectionEnd;
+
+                    this.value = currentValue.substring(0, selectionStart) + "\n" + currentValue.substring(selectionEnd);
+                    this.selectionStart = this.selectionEnd = selectionStart + 1;
+                    event.preventDefault();
+                }
+            });
+        </script>
+
+        <div
+            style="width: 205px; height: 50px; left: 435px; top: 403px; position: absolute; background: #D9D9D9; border-radius: 20px">
+            <textarea class="mdl-textfield__input" id="financial-goals" name="financial-goals"
+                style="color: rgb(0, 0, 0); resize: vertical;"></textarea>
+        </div>
+        <script>
+            const financialDetailsInput = document.getElementById('financial-goals');
+            const financialDetailsContainer = document.querySelector('#financial-goals').parentElement;
+
+            financialDetailsInput.addEventListener('keydown', function (event) {
+                if (event.key === "Enter" && event.shiftKey) {
+                    // Insert a line break (newline) when Shift + Enter is pressed
+                    const currentValue = this.value;
+                    const selectionStart = this.selectionStart;
+                    const selectionEnd = this.selectionEnd;
+
+                    this.value = currentValue.substring(0, selectionStart) + "\n" + currentValue.substring(selectionEnd);
+                    this.selectionStart = this.selectionEnd = selectionStart + 1;
+                    event.preventDefault();
+                }
+            });
+        </script>
+
+        <!-- Simple Textfield for DOB-->
+
+        <div class="mdl-textfield mdl-js-textfield" style="top:150px; left: 950px;">
+            <input class="mdl-textfield__input" type="text" id="sample1" name="sample1" style="color: white;">
+            <label class="mdl-textfield__label" for="sample1" style="color: grey;">DD/MM/YYYY</label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield" style="top:150px; left: 100px;">
+            <input class="mdl-textfield__input" type="text" id="sample2" name="sample2" style="color: white;">
+            <label class="mdl-textfield__label" for="sample2" style="color: grey;">Full Name</label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield" style="top:250px; left: 350px;">
+            <input class="mdl-textfield__input" type="number" id="sample3" name="sample3" style="color: white;">
+            <label class="mdl-textfield__label" for="sample3" style="color: grey;">Phone Number</label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield" style="top:200px; left: 40px;">
+            <input class="mdl-textfield__input" type="password" id="sample4" name="sample4" style="color: white;">
+            <label class="mdl-textfield__label" for="sample4" style="color: grey;">Password</label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield" style="top:235px; left: 400px;">
+            <input class="mdl-textfield__input" type="number" id="sample5" name="sample5" style="color: white;">
+            <label class="mdl-textfield__label" for="sample5" style="color: grey; width: 300px;">1: Beginner, 2:
+                Intermediate, 3: Advanced</label>
+        </div>
+
+
+        <button type="submit"
+            style="width: 44px; height: 44px; left: 1118px; top: 658px; position: absolute; background: #7EFFA2; border-radius: 9999px">
+            <div><i class="material-icons">done</i></div>
+        </button>
+
+        <div class="mdl-textfield mdl-js-textfield" style="top:130px; left: 100px;">
+            <input class="mdl-textfield__input" type="text" id="sample6" name="sample6" style="color: white;">
+            <label class="mdl-textfield__label" for="sample6" style="color: grey;">E-mail ID</label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield" style="top:180px; left: -200px;">
+            <input class="mdl-textfield__input" type="text" id="sample7" name="sample7" style="color: white;">
+            <label class="mdl-textfield__label" for="sample7" style="color: grey;">Place of living</label>
+        </div>
+
+        <div style="width: 200px; height: 215px; left: 52.75%; top: 220px; position: absolute">
+            <div
+                style=" top: 50%; position: absolute; color: white; font-size: 26px; font-family: Inconsolata; font-weight: 700; word-wrap: break-word">
+                Risk Tolerance
+                <ul class="demo-list-control mdl-list">
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content" style="color: white;">
+                            Very low
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"
+                                for="list-checkbox-very-low">
+                                <input type="checkbox" id="list-checkbox-very-low" name="list-checkbox-very-low"
+                                    class="mdl-checkbox__input" />
+                            </label>
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content" style="color: white;">
+                            Low
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-low">
+                                <input type="checkbox" id="list-checkbox-low" name="list-checkbox-low"
+                                    class="mdl-checkbox__input" />
+                            </label>
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content" style="color: white;">
+                            Medium
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-medium">
+                                <input type="checkbox" id="list-checkbox-medium" name="list-checkbox-medium"
+                                    class="mdl-checkbox__input" />
+                            </label>
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content" style="color: white;">
+                            High
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-high">
+                                <input type="checkbox" id="list-checkbox-high" name="list-checkbox-high"
+                                    class="mdl-checkbox__input" />
+                            </label>
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content" style="color: white;">
+                            Very High
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"
+                                for="list-checkbox-very-high">
+                                <input type="checkbox" id="list-checkbox-very-high" name="list-checkbox-very-high"
+                                    class="mdl-checkbox__input" />
+                            </label>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <input type="submit" value="Done"
+            style="width: 44px; height: 44px; left: 1118px; top: 658px; position: absolute; background: #7EFFA2; border-radius: 9999px">
+    </form>
+</body>
+<script type="module" src="../static/index.js"></script>
+
+</html>
