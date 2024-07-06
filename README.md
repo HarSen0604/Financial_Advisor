@@ -24,6 +24,9 @@ The "Intelligent Financial Advisor and Optimizer" project aims to enhance financ
 ### Tax Tracking and Saving Tips
 - Integrates tax tracking with personalized saving strategies.
 
+### Cumulative Suggestim system
+- Gets the suggestions both from the alogrithm built into the application as well as from LLM model by feeding the processed data.
+
 ## Tech Stack
 
 - **Python**: Core programming language for backend logic, data analysis, and AI tasks.
