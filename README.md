@@ -18,7 +18,7 @@ The "Intelligent Financial Advisor and Optimizer" project aims to enhance financ
 ### Dynamic Monthly Budgeting
 - Develops adaptive budget plans with real-time alerts and adjustments.
 
-### Credit Score Tracking
+### Credit Score Tracking (Future Scope)
 - Monitors credit scores and offers strategies for improvement.
 
 ### Tax Tracking and Saving Tips
