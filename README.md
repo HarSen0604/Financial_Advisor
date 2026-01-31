@@ -25,14 +25,14 @@ The "Intelligent Financial Advisor and Optimizer" project aims to enhance financ
 - Integrates tax tracking with personalized saving strategies.
 
 ### Cumulative Suggestim system
-- Gets the suggestions both from the alogrithm built into the application as well as from LLM model by feeding the processed data.
+- Gets the suggestions both from the algorithm built into the application as well as from the LLM model by feeding the processed data.
 
 ## Tech Stack
 
 - **Python**: Core programming language for backend logic, data analysis, and AI tasks.
 - **Flask**: Lightweight web framework for building the platform's web interface and personalized profiles.
 - **Generative AI**: Potential integration for natural language processing and dynamic budget planning using OpenAI.
-- **HTML, CSS and JS**: Frontend development for creating an intuitive user interface.
+- **HTML, CSS, and JS**: Frontend development for creating an intuitive user interface.
 
 ## Use Cases
 
